@@ -9,7 +9,7 @@
 // Login Form Markup
 function login_form() {
 	?>
-	<form method="post" action="<?php echo $_SERVER['REQUEST_URI']; ?>">
+	<form id="custom-login-form" method="post" action="<?php echo $_SERVER['REQUEST_URI']; ?>">
 		<ul class="clearfix">
 			<?php
                 // Security
@@ -18,13 +18,13 @@ function login_form() {
                 }
             ?>
 			<li>
-                <div class="input-box">
+                <div class="custom-input-box">
                     <label for="log-username">Name</label>
                     <input name="log_username" type="text" id="log-username">
                 </div>
             </li>
             <li>
-                <div class="input-box">
+                <div class="custom-input-box">
                     <label for="log-password">Password</label>
                     <input name="login_password" type="password" id="log-password">
                 </div>
@@ -50,7 +50,8 @@ function login_authenticate($username, $password){
 		echo $user->get_error_message();
 	}
 	if ( !is_wp_error($user) ) {
-		wp_redirect(home_url('my-feedbag'));
+		wp_redirect(home_url());
+		exit;
 	}
 }
 
@@ -72,12 +73,8 @@ function process_login(){
 }
 
 // Output Login Form Shortcode
-// Turn on Output Buffering
-// Return current buffer contents and delete output buffer
 function login_shortcode(){
-	ob_start();
 	process_login();
-	return ob_get_clean();
 }
 
 // Add Shortcode for the Login Form
