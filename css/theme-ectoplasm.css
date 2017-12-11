@@ -7,7 +7,7 @@
  */
 
 /* ==========================================================================
-   Base styles: opinionated defaults
+   Base styles: opinionated lights
    ========================================================================== */
 
 html {
@@ -15,7 +15,7 @@ html {
     font-size: 1em;
     line-height: 1.4;
     font-family: 'Raleway', sans-serif;
-    background: #52accc;
+    background: #413256;
 }
 
 /*
@@ -39,7 +39,7 @@ html {
 }
 
 /*
- * A better looking default horizontal rule
+ * A better looking light horizontal rule
  */
 
 hr {
@@ -67,7 +67,7 @@ video {
 }
 
 /*
- * Remove default fieldset styles.
+ * Remove blue fieldset styles.
  */
 
 fieldset {
@@ -101,11 +101,11 @@ textarea {
 
 
 /* ==========================================================================
-   Default Theme styles
+   Ectoplasm Theme styles
    ========================================================================== */
 
 form {
-    background: #52accc;
+    background: #413256;
     padding: 40px 95px;
     display: block;
     width: 800px;
@@ -114,7 +114,7 @@ form {
 }
 
 h1 {
-    color: #fff;
+    color: #a3b745;
     text-align: center;
     font-size: 48px;
     margin: 0;
@@ -153,7 +153,7 @@ h1 {
     float: right;
     padding: 0 1em;
     width: 40%;
-    color: #696969;
+    color: #a3b745;
     font-weight: bold;
     font-size: 24px;
     -webkit-font-smoothing: antialiased;
@@ -173,18 +173,18 @@ h1 {
     width: 100%;
 }
 
-.input--default {
+.input--ectoplasm {
     overflow: hidden;
     padding-top: 2em;
 }
 
-.input__field--default {
+.input__field--ectoplasm {
     width: 100%;
     background: transparent;
     opacity: 0;
     padding: 2em;
     z-index: 100;
-    color: #096484;
+    color: #a3b745;
     font-weight: bold;
     font-size: 20px;
     padding-left: 16px;
@@ -192,25 +192,25 @@ h1 {
     top: 15px;
 }
 
-.input__label--default {
+.input__label--ectoplasm {
     width: 100%;
     bottom: 0;
     position: absolute;
     pointer-events: none;
     text-align: left;
-    color: #096484;
+    color: #a3b745;
     padding: 0 0.5em;
 }
 
-.input__label--default::before {
+.input__label--ectoplasm::before {
     content: '';
     position: absolute;
     width: 100%;
     height: 4em;
     top: 100%;
     left: 0;
-    background: #fff;
-    border-top: 4px solid #096484;
+    background: #523f6d;
+    border-top: 4px solid #a3b745;
     -webkit-transform: translate3d(0, -3px, 0);
     transform: translate3d(0, -3px, 0);
     -webkit-transition: -webkit-transform 0.4s;
@@ -219,7 +219,7 @@ h1 {
     transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
 }
 
-.input__label-content--default {
+.input__label-content--ectoplasm {
     padding: 0.5em 0;
     -webkit-transform-origin: 0% 100%;
     transform-origin: 0% 100%;
@@ -229,25 +229,25 @@ h1 {
     transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
 }
 
-.input__field--default:focus,
-.input--filled .input__field--default {
+.input__field--ectoplasm:focus,
+.input--filled .input__field--ectoplasm {
     cursor: text;
     opacity: 1;
     -webkit-transition: opacity 0s 0.4s;
     transition: opacity 0s 0.4s;
 } 
 
-.input__field--default:focus + .input__label--default::before,
-.input--filled .input__label--default::before {
+.input__field--ectoplasm:focus + .input__label--ectoplasm::before,
+.input--filled .input__label--ectoplasm::before {
     -webkit-transition-delay: 0.05s;
     transition-delay: 0.05s;
     -webkit-transform: translate3d(0, -3.3em, 0);
     transform: translate3d(0, -3.3em, 0);
 }
 
-.input__field--default:focus + .input__label--default .input__label-content--default,
-.input--filled .input__label-content--default {
-    color: #096484;
+.input__field--ectoplasm:focus + .input__label--ectoplasm .input__label-content--ectoplasm,
+.input--filled .input__label-content--ectoplasm {
+    color: #a3b745;
     -webkit-transform: translate3d(0, -3.3em, 0) scale3d(0.81, 0.81, 1);
     transform: translate3d(0, -3.3em, 0) scale3d(0.81, 0.81, 1);
 }
@@ -300,9 +300,9 @@ h1 {
 
 /* Button 2 */
 .btn-2 {
-    background: #096484;
-    color: #fff;
-    box-shadow: 0 6px #0b3d58;
+    background: #a3b745;
+    color: #46403c;
+    box-shadow: 0 6px #2a2417;
     -webkit-transition: none;
     -moz-transition: none;
     transition: none;
@@ -317,12 +317,12 @@ h1 {
 }
 
 .btn-2d:hover {
-    box-shadow: 0 8px #0b3d58;
+    box-shadow: 0 8px #2a2417;
     top: -2px;
 }
 
 .btn-2d:active {
-    box-shadow: 0 0 #0b3d58;
+    box-shadow: 0 0 #2a2417;
     top: 6px;
 }
 
@@ -337,7 +337,7 @@ h1 {
 
 
 a {
-    color: #fff;
+    color: #a3b745;
     font-weight: bold;
     font-size: 24px;
     text-decoration: none;
@@ -348,13 +348,13 @@ a {
 }
 
 .lpw:hover {
-    color: #0b3d58;
-    border-bottom: 5px solid #0b3d58;
+    color: #a3b745;
+    border-bottom: 5px solid #a3b745;
 }
 
 
 /* ==========================================================================
-   Blue Theme styles
+   light Theme styles
    ========================================================================== */
 
 
